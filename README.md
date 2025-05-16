@@ -36,7 +36,7 @@ OPENAI_API_KEY=mock_or_optional
 ### ▶️ Start the server:
 
 ```bash
-node server.js
+node Backend/server.js
 ```
 
 ---
