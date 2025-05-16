@@ -22,6 +22,8 @@ A full-stack real-time sales analytics system built with Node.js, WebSockets, an
 git clone https://github.com/your-username/realtime-analytics.git
 cd realtime-analytics
 npm install
+cd Backend
+npm install
 ```
 
 ### 📄 Add `.env` in the root directory:
