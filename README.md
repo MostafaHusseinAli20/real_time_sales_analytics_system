@@ -112,9 +112,3 @@ npm test
 * No heavy third-party frameworks were used.
 * System is extensible for real AI integration or full dashboard upgrade.
 * Recommendations module can be swapped to use OpenAI API easily.
-
----
-
-## 🙌 Thanks
-
-This project was built as part of a technical interview challenge to showcase backend + real-time + smart logic integration with a simple UI.
