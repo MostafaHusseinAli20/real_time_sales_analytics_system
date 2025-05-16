@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Sales Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light p-4">
+  <div class="container">
+    <div class="mb-3">
+  <label for="citySelect" class="form-label">Choose a city:</label>
+  <select id="citySelect" class="form-select" onchange="fetchWeather()">
+    <option value="Cairo">Cairo</option>
+    <option value="Alexandria">Alexandria</option>
+    <option value="Giza">Giza</option>
+    <option value="Port Said">Port Said</option>
+    <option value="Suez">Suez</option>
+    <option value="Luxor">Luxor</option>
+    <option value="Aswan">Aswan</option>
+    <option value="Ismailia">Ismailia</option>
+    <option value="Damietta">Damietta</option>
+    <option value="Sharqia">Sharqia</option>
+    <option value="Qalyubia">Qalyubia</option>
+    <option value="Gharbia">Gharbia</option>
+    <option value="Dakahlia">Dakahlia</option>
+    <option value="Faiyum">Faiyum</option>
+    <option value="Minya">Minya</option>
+    <option value="Beni Suef">Beni Suef</option>
+    <option value="Sohag">Sohag</option>
+    <option value="Qena">Qena</option>
+    <option value="Red Sea">Red Sea</option>
+    <option value="New Valley">New Valley</option>
+    <option value="Matruh">Matruh</option>
+    <option value="North Sinai">North Sinai</option>
+    <option value="South Sinai">South Sinai</option>
+    <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+    <option value="Asyut">Asyut</option>
+    <option value="Monufia">Monufia</option>
+    <option value="Luxor">Luxor</option>
+  </select>
+</div>
+
+<div class="mb-4 card p-3 bg-white rounded shadow-sm d-none" id="weather">
+  <h4>🌤️ Current Weather</h4>
+  <p><strong>City:</strong> <span id="weather-city"></span></p>
+  <p><strong>Temperature:</strong> <span id="weather-temp"></span>°C</p>
+  <p><strong>Condition:</strong> <span id="weather-cond"></span></p>
+</div>
+
+<div class="mb-4">
+  <button class="btn btn-primary me-2" onclick="fetchAnalytics()">🔄 Load Analytics</button>
+  <button class="btn btn-success" onclick="fetchRecommendations()">💡 Load Recommendations</button>
+</div>
+
+<div class="mb-4">
+  <h4>🧠 Smart Recommendations</h4>
+  <ul id="recommendations" class="list-group"></ul>
+</div>
+
+<div class="mb-4">
+  <h4>📈 Analytics</h4>
+  <table class="table table-bordered bg-white">
+    <tbody id="analytics-table"></tbody>
+  </table>
+</div>
+
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
