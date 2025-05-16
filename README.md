@@ -43,7 +43,7 @@ node server.js
 
 | Method | Endpoint              | Description                                         |
 | ------ | --------------------- | --------------------------------------------------- |
-| `POST` | `/orders/add_order`   | Add a new sales order                               |
+| `POST` | `/orders`             | Add a new sales order                               |
 | `GET`  | `/analytics`          | Get real-time analytics data                        |
 | `GET`  | `/recommendations`    | Get dynamic suggestions based on orders and weather |
 | `GET`  | `/weather?city=Cairo` | Get live weather data for a city                    |
